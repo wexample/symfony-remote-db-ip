@@ -1,6 +1,6 @@
 # symfony-remote-db-ip
 
-Version: 2.0.0
+Version: 2.0.1
 
 `wexample/symfony-remote-db-ip` implements symfony-geo's `IpLocatorInterface` with DB-IP's free **IP to Country Lite** database (CC BY 4.0): the country of an address, read from a file on the machine — no request leaves it, no address is kept.
 
@@ -41,7 +41,7 @@ The suite includes packages for configuration management, file handling, prompts
 - symfony/console: ^7.4 || ^8.0
 - symfony/http-client: ^7.4 || ^8.0
 - wexample/symfony-geo: >=8.0.0
-- wexample/symfony-helpers: >=17.0.0
+- wexample/symfony-helpers: >=18.0.0
 
 ## Versioning & Compatibility Policy
 
