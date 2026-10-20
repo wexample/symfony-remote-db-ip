@@ -1,0 +1,20 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+        bind:
+            $database: '%wexample_symfony_remote_db_ip.database%'
+            $downloadUrl: '%wexample_symfony_remote_db_ip.download_url%'
+            $autoUpdate: '%wexample_symfony_remote_db_ip.auto_update%'
+
+    Wexample\SymfonyRemoteDbIp\:
+        resource: '../../{Command,EventSubscriber,Service}'
+
+    Wexample\SymfonyRemoteDbIp\Service\DbIpDatabaseUpdater:
+        arguments:
+            $httpClient: '@http_client'
+
+    Wexample\SymfonyRemoteDbIp\EventSubscriber\DbIpAutoUpdateSubscriber:
+        arguments:
+            $cache: '@cache.app'
