@@ -1,7 +1,7 @@
 {
   "name": "wexample/symfony-remote-db-ip",
   "description": "The country of an IP address, from DB-IP's free IP to Country Lite database, downloaded and read on the machine",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "type": "library",
   "license": "MIT",
   "autoload": {
@@ -26,7 +26,7 @@
     "symfony/console": "^7.4 || ^8.0",
     "symfony/http-client": "^7.4 || ^8.0",
     "wexample/symfony-geo": ">=8.0.2",
-    "wexample/symfony-helpers": ">=18.0.2"
+    "wexample/symfony-helpers": ">=19.0.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^13"
